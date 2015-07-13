@@ -1,0 +1,33 @@
+#include "version.h"
+
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION VER_Major, VER_Minor, VER_Release, VER_Build
+PRODUCTVERSION VER_Major, VER_Minor, VER_Release, VER_Build
+FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+FILEFLAGS 0
+FILEOS VOS__WINDOWS32
+FILETYPE 0
+FILESUBTYPE VFT2_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040004e4"
+        BEGIN
+            VALUE "FileVersion", STR_Version
+            VALUE "FileDescription", STR_Description
+            VALUE "ProductName", STR_AppName
+            VALUE "ProductVersion", VERSION_STRING
+            VALUE "CompanyName", STR_Corporation
+            VALUE "LegalCopyright", STR_Copyright
+            VALUE "Comments", "Powered by " STR_Author ".\nBuild Time: " BuildTime
+            VALUE "OriginalFilename", STR_Filename
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0400, 0x04e4
+    END
+END
