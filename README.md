@@ -6,10 +6,10 @@ parameter `release` add one release number
 
 The version file template from [Yonsm's](http://yonsm.net/) tool long time ago.
 
-`buildapp.lua` excute first time will create `version.h` and `number.inc` in build path.
+`buildapp.lua` excute first time will create `version.h` and `number.inc` in build path.  
 other time read version number from `number.inc`, and plus it.
 
-but default corporation info is `Microsoft` ;-)
+but default corporation info is `Microsoft` ;-)  
 if change these. create `info.txt` in `version.h` same path like these:
 ```C
 #define STR_AppName             TEXT("Your App Name")
@@ -27,5 +27,5 @@ or use #include.
 ```C
 #include version.rc
 ```
-add `lua buildpp.lua build` to `PreBuildEvent`.
+add `lua buildpp.lua build` to `PreBuildEvent`.  
 you can plus one build number in every build.
