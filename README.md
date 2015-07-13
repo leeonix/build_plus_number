@@ -4,6 +4,8 @@
 parameter `build` add one build number
 parameter `release` add one release number
 
+The version file template template from [Yonsm's](http://yonsm.net/) tool long time ago.
+
 `buildapp.lua` excute first time will create `version.h` and `number.inc` in build path.
 other time read version number from `number.inc`, and plus it.
 
